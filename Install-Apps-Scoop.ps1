@@ -13,6 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Scoop Package Manager for Windows.
 #
+#   Last Updated:   30.04.2023
 ################################################################################################################################
 # Perform an initial update.
 Write-Output "`nPerforming initial update . . . .`n"

@@ -13,6 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs necessery Dependencies, Runtimes & Dev-Kits using the Windows Package Manager for Windows.
 #
+#   Last Updated:   30.04.2023
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
