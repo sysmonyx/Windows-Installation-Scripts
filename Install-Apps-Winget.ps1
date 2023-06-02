@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #
-#   Last Updated:   30.04.2023
+#   Last Updated:   02.06.2023
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -72,6 +72,7 @@ $apps = @(
     "MarkText.MarkText"                                         # MarkText
     "Mega.MEGASync"                                             # MEGASync
     "Microsoft.Edge"                                            # Microsoft Edge
+    "9WZDNCRFJBH4"                                              # Microsoft Photos                  (UWP - MSStore)
     "Microsoft.XMLNotepad"                                      # Microsoft XML Notepad
     "MKVToolNix.MKVToolNix"                                     # MKVToolNix
     "Insecure.Nmap"                                             # Nmap
@@ -115,7 +116,10 @@ $apps = @(
     "Microsoft.VisualStudio.2022.Community"                     # Visual Studio Community Edition 2022
     "Microsoft.VisualStudioCode"                                # Visual Studio Code
     "VMware.WorkstationPro"                                     # VMware Workstation Pro
-    "WhatsApp.WhatsApp"                                         # WhatsApp
+    #"WhatsApp.WhatsApp"                                        # WhatsApp Desktop                  (Deprecated)
+    "9NKSQGP7F2NH"                                              # WhatsApp Desktop                  (UWP - MSStore)
+    "9WZDNCRFHVN5"                                              # Windows Calculator                (UWP - MSStore)
+    "Microsoft.WindowsTerminal"                                 # Windows Terminal                  (Installed by default on Win-11)
     "WinMerge.WinMerge"                                         # WinMerge
     "WinSCP.WinSCP"                                             # WinSCP
     "WiresharkFoundation.Wireshark"                             # Wireshark
