@@ -20,7 +20,7 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
 
 # Perform an initial update.
-Write-Output "`nPerforming intial update . . . .`n"
+Write-Output "`nPerforming initial update . . . .`n"
 winget upgrade -h --all --include-unknown
 Write-Output "`nFinished initial update.`n"
 
