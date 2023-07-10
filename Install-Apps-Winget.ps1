@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #
-#   Last Updated:   02.06.2023
+#   Last Updated:   10.07.2023
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -87,6 +87,7 @@ $apps = @(
     "Obsidian.Obsidian"                                         # Obsidian
     "Microsoft.OneDrive"                                        # OneDrive
     "OnionShare.OnionShare"                                     # OnionShare
+    "Ookla.Speedtest.CLI"                                       # Ookla Speedtest CLI
     "namazso.OpenHashTab"                                       # OpenHashTab
     "Parsec.Parsec"                                             # Parsec
     "Playnite.Playnite"                                         # Playnite
