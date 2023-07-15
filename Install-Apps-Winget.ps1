@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #
-#   Last Updated:   10.07.2023
+#   Last Updated:   15.07.2023
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -54,6 +54,7 @@ $apps = @(
     "szTheory.exifcleaner"                                      # EXIF Cleaner
     "FilenCloud.FilenSync"                                      # Filen Sync
     "Mozilla.Firefox"                                           # Firefox
+    "Fortinet.FortiClientVPN"                                   # FortiClient VPN
     "PrimateLabs.Geekbench.5"                                   # Geekbench
     "Git.Git"                                                   # Git
     "GitHub.GitHubDesktop"                                      # GitHub Desktop
@@ -117,7 +118,7 @@ $apps = @(
     "Microsoft.VisualStudio.2022.Community"                     # Visual Studio Community Edition 2022
     "Microsoft.VisualStudioCode"                                # Visual Studio Code
     "VMware.WorkstationPro"                                     # VMware Workstation Pro
-    #"WhatsApp.WhatsApp"                                        # WhatsApp Desktop                  (Deprecated)
+    #"WhatsApp.WhatsApp"                                        # WhatsApp Desktop                  (Deprecated - Can be used instead of the new UWP version)
     "9NKSQGP7F2NH"                                              # WhatsApp Desktop                  (UWP - MSStore)
     "9WZDNCRFHVN5"                                              # Windows Calculator                (UWP - MSStore)
     "Microsoft.WindowsTerminal"                                 # Windows Terminal                  (Installed by default on Win-11)
