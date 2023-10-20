@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #
-#   Last Updated:   15.07.2023
+#   Last Updated:   20.10.2023
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -110,6 +110,7 @@ $apps = @(
     "TeamViewer.TeamViewer"                                     # TeamViewer
     "Telegram.TelegramDesktop"                                  # Telegram Desktop
     "CodeSector.TeraCopy"                                       # TeraCopy
+    "Alex313031.Thorium"                                        # Thorium Browser
     "Appest.TickTick"                                           # TickTick
     "Doist.Todoist"                                             # Todoist
     "TorProject.TorBrowser"                                     # Tor Browser
