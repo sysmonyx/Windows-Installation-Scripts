@@ -73,7 +73,6 @@ $apps = @(
     "MarkText.MarkText"                                         # MarkText
     "Mega.MEGASync"                                             # MEGASync
     "Microsoft.Edge"                                            # Microsoft Edge
-    "9WZDNCRFJBH4"                                              # Microsoft Photos                  (UWP - MSStore)
     "Microsoft.XMLNotepad"                                      # Microsoft XML Notepad
     "MKVToolNix.MKVToolNix"                                     # MKVToolNix
     "Insecure.Nmap"                                             # Nmap
@@ -100,7 +99,6 @@ $apps = @(
     "JetBrains.PyCharm.Community"                               # PyCharm Community Edition
     "Python.Python.3.11"                                        # Python 3
     "qBittorrent.qBittorrent"                                   # qBittorrent
-    "QL-Win.QuickLook"                                          # QuickLook
     "Oxen.Session"                                              # Session Messenger
     "ShareX.ShareX"                                             # ShareX
     "OpenWhisperSystems.Signal"                                 # Signal Desktop
@@ -119,9 +117,6 @@ $apps = @(
     "Microsoft.VisualStudio.2022.Community"                     # Visual Studio Community Edition 2022
     "Microsoft.VisualStudioCode"                                # Visual Studio Code
     "VMware.WorkstationPro"                                     # VMware Workstation Pro
-    #"WhatsApp.WhatsApp"                                        # WhatsApp Desktop                  (Deprecated - Can be used instead of the new UWP version)
-    "9NKSQGP7F2NH"                                              # WhatsApp Desktop                  (UWP - MSStore)
-    "9WZDNCRFHVN5"                                              # Windows Calculator                (UWP - MSStore)
     "Microsoft.WindowsTerminal"                                 # Windows Terminal                  (Installed by default on Win-11)
     "WinMerge.WinMerge"                                         # WinMerge
     "WinSCP.WinSCP"                                             # WinSCP
