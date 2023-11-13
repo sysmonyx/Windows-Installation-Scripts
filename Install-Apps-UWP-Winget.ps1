@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps from the Microsoft Store using the Windows Package Manager for Windows.
 #
-#   Last Updated:   1211.2023
+#   Last Updated:   12.11.2023
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
