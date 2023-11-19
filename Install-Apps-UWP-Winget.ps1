@@ -31,6 +31,8 @@ $apps = @(
     "9PFHDD62MXS1"                                              # Apple Music Preview
     "9N4WGH0Z6VHQ"                                              # HEVC Video Extensions for Device Manufacturers
     "9WZDNCRFJ4MV"                                              # Lenovo Vantage
+    "9MSMLRH6LZF3"                                              # Microsoft Notepad
+    "9PCFS5B6T72H"                                              # Microsoft Paint
     "9WZDNCRFJBH4"                                              # Microsoft Photos
     "9NBLGGH5R558"                                              # Microsoft To Do
     "9NKSQGP7F2NH"                                              # WhatsApp Desktop
