@@ -29,6 +29,7 @@ $apps = @(
 
     # Sorted A-Z.
     "9PFHDD62MXS1"                                              # Apple Music Preview
+    "9MVZQVXJBQ9V"                                              # AV1 Video Extension
     "9N4WGH0Z6VHQ"                                              # HEVC Video Extensions for Device Manufacturers
     "9WZDNCRFJ4MV"                                              # Lenovo Vantage
     "9MSMLRH6LZF3"                                              # Microsoft Notepad
