@@ -79,6 +79,7 @@ $apps = @(
     "OpenJS.NodeJS"                                             # NodeJS
     "Nord.NordLocker"                                           # NordLocker
     "Notepad++.Notepad++"                                       # Notepad++
+    "Streetwriters.Notesnook"                                   # Notesnook
     "Notion.Notion"                                             # Notion
     "Nlitesoft.NTLite"                                          # NTLite
     "TechPowerUp.NVCleanstall"                                  # NVCleanstall
