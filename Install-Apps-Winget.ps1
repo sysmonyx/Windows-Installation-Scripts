@@ -54,7 +54,6 @@ $apps = @(
     "szTheory.exifcleaner"                                      # EXIF Cleaner
     "FilenCloud.FilenSync"                                      # Filen Sync
     "Mozilla.Firefox"                                           # Firefox
-    "Fortinet.FortiClientVPN"                                   # FortiClient VPN
     "PrimateLabs.Geekbench.5"                                   # Geekbench
     "Git.Git"                                                   # Git
     "GitHub.GitHubDesktop"                                      # GitHub Desktop
