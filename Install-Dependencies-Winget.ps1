@@ -28,23 +28,25 @@ Write-Output "`nFinished initial update.`n"
 $apps = @(
 
     # Sorted A-Z.
-    "EclipseAdoptium.Temurin.20.JDK"                            # Adoptium OpenJDK 20
+    "EclipseAdoptium.Temurin.21.JDK"                            # Adoptium OpenJDK 21
+    "Microsoft.DotNet.SDK.8"                                    # Microsoft DotNET SDK 8.0
     "Microsoft.DotNet.SDK.7"                                    # Microsoft DotNET SDK 7.0
     "Microsoft.DotNet.SDK.6"                                    # Microsoft DotNET SDK 6.0
     "Microsoft.DotNet.SDK.5"                                    # Microsoft DotNET SDK 5.0
+    "Microsoft.DotNet.SDK.3_1"                                  # Microsoft DotNET SDK 3.1
     "Microsoft.DirectX"                                         # Microsoft DirectX
-    "Microsoft.VC++2005Redist-x64"                              # Microsoft Visual C++ 2005 Redistributable (x64)
-    "Microsoft.VC++2005Redist-x86"                              # Microsoft Visual C++ 2005 Redistributable (x86)
-    "Microsoft.VC++2008Redist-x64"                              # Microsoft Visual C++ 2008 Redistributable (x64)
-    "Microsoft.VC++2008Redist-x86"                              # Microsoft Visual C++ 2008 Redistributable (x86)
-    "Microsoft.VC++2010Redist-x64"                              # Microsoft Visual C++ 2010 Redistributable (x64)
-    "Microsoft.VC++2010Redist-x86"                              # Microsoft Visual C++ 2010 Redistributable (x86)
-    "Microsoft.VC++2012Redist-x64"                              # Microsoft Visual C++ 2012 Redistributable (x64)
-    "Microsoft.VC++2012Redist-x86"                              # Microsoft Visual C++ 2012 Redistributable (x86)
-    "Microsoft.VC++2013Redist-x64"                              # Microsoft Visual C++ 2013 Redistributable (x64)
-    "Microsoft.VC++2013Redist-x86"                              # Microsoft Visual C++ 2013 Redistributable (x86)
-    "Microsoft.VC++2015-2022Redist-x64"                         # Microsoft Visual C++ 2015-2022 Redistributable (x64)
-    "Microsoft.VC++2015-2022Redist-x86"                         # Microsoft Visual C++ 2015-2022 Redistributable (x86)
+    "Microsoft.VCRedist.2005.x64"                               # Microsoft Visual C++ 2005 Redistributable (x64)
+    "Microsoft.VCRedist.2005.x86"                               # Microsoft Visual C++ 2005 Redistributable (x86)
+    "Microsoft.VCRedist.2008.x64"                               # Microsoft Visual C++ 2008 Redistributable (x64)
+    "Microsoft.VCRedist.2008.x86"                               # Microsoft Visual C++ 2008 Redistributable (x86)
+    "Microsoft.VCRedist.2010.x64"                               # Microsoft Visual C++ 2010 Redistributable (x64)
+    "Microsoft.VCRedist.2010.x86"                               # Microsoft Visual C++ 2010 Redistributable (x86)
+    "Microsoft.VCRedist.2012.x64"                               # Microsoft Visual C++ 2012 Redistributable (x64)
+    "Microsoft.VCRedist.2012.x86"                               # Microsoft Visual C++ 2012 Redistributable (x86)
+    "Microsoft.VCRedist.2013.x64"                               # Microsoft Visual C++ 2013 Redistributable (x64)
+    "Microsoft.VCRedist.2013.x86"                               # Microsoft Visual C++ 2013 Redistributable (x86)
+    "Microsoft.VCRedist.2015+.x64"                              # Microsoft Visual C++ 2015-2022 Redistributable (x64)
+    "Microsoft.VCRedist.2015+.x86"                              # Microsoft Visual C++ 2015-2022 Redistributable (x86)
 
 )
 
