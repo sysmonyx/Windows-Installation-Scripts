@@ -59,7 +59,7 @@ $apps = @(
     "GitHub.GitHubDesktop"                                      # GitHub Desktop
     "GOG.Galaxy"                                                # GOG Galaxy 2.0
     "Google.Chrome"                                             # Google Chrome
-    "Google.Drive"                                              # Google Drive
+    "Google.GoogleDrive"                                        # Google Drive
     "TechPowerUp.GPU-Z"                                         # GPU-Z
     "HandBrake.HandBrake"                                       # Handbrake
     "REALiX.HWiNFO"                                             # HWINFO-64
@@ -97,7 +97,7 @@ $apps = @(
     "ProtonTechnologies.ProtonVPN"                              # Proton VPN
     "PuTTY.PuTTY"                                               # PuTTY
     "JetBrains.PyCharm.Community"                               # PyCharm Community Edition
-    "Python.Python.3.11"                                        # Python 3
+    "Python.Python.3.12"                                        # Python 3
     "qBittorrent.qBittorrent"                                   # qBittorrent
     "Oxen.Session"                                              # Session Messenger
     "ShareX.ShareX"                                             # ShareX
@@ -121,7 +121,7 @@ $apps = @(
     "WinMerge.WinMerge"                                         # WinMerge
     "WinSCP.WinSCP"                                             # WinSCP
     "WiresharkFoundation.Wireshark"                             # Wireshark
-    "XMind.XMind"                                               # Xmind
+    "Xmind.Xmind"                                               # Xmind
     "ZeroTier.ZeroTierOne"                                      # ZeroTier One
     "Zoom.Zoom"                                                 # Zoom
 
