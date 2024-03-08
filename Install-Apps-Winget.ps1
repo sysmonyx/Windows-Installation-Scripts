@@ -69,7 +69,6 @@ $apps = @(
     "KeePassXCTeam.KeePassXC"                                   # KeePassXC
     "LibreWolf.LibreWolf"                                       # LibreWolf
     "Malwarebytes.Malwarebytes"                                 # Malwarebytes
-    "MarkText.MarkText"                                         # MarkText
     "Mega.MEGASync"                                             # MEGASync
     "Microsoft.Edge"                                            # Microsoft Edge
     "Microsoft.XMLNotepad"                                      # Microsoft XML Notepad
@@ -102,13 +101,12 @@ $apps = @(
     "Oxen.Session"                                              # Session Messenger
     "ShareX.ShareX"                                             # ShareX
     "OpenWhisperSystems.Signal"                                 # Signal Desktop
-    "Shabinder.SpotiFlyer"                                      # SpotiFlyer
     "Spotify.Spotify"                                           # Spotify
     "Valve.Steam"                                               # Steam
     "TeamViewer.TeamViewer"                                     # TeamViewer
     "Telegram.TelegramDesktop"                                  # Telegram Desktop
     "CodeSector.TeraCopy"                                       # TeraCopy
-    "Alex313031.Thorium"                                        # Thorium Browser
+    "Alex313031.Thorium.AVX2"                                   # Thorium Browser (AVX2)
     "Appest.TickTick"                                           # TickTick
     "Doist.Todoist"                                             # Todoist
     "TorProject.TorBrowser"                                     # Tor Browser
