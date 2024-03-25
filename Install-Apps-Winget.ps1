@@ -109,6 +109,9 @@ $apps = @(
     "VMware.WorkstationPro"                                     # VMware Workstation Pro
     "VMware.WorkstationPlayer"                                  # VMware Workstation Player
 
+    # Image Upscaler.
+    "Tohrusky.Final2x"                                          # Final2x
+
     # Media Writer.
     "Balena.Etcher"                                             # Balena Etcher
     "LIGHTNINGUK.ImgBurn"                                       # ImgBurn
