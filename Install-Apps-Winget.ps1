@@ -24,107 +24,151 @@ Write-Output "`nPerforming initial update . . . .`n"
 winget upgrade -h --all --include-unknown
 Write-Output "`nFinished initial update.`n"
 
+################################################################################################################################
 # Apps.
 $apps = @(
 
-    # Sorted A-Z.
-    "mcmilk.7zip-zstd"                                          # 7-Zip ZSTD
-    "AdGuard.AdGuard"                                           # AdGuard Windows
-    "FinalWire.AIDA64.Extreme"                                  # AIDA-64 Extreme
-    "AnyDeskSoftwareGmbH.AnyDesk"                               # AnyDesk
-    "Balena.Etcher"                                             # Balena Etcher
-    "Bitwarden.Bitwarden"                                       # Bitwarden
-    "BleachBit.BleachBit"                                       # Bleachbit
-    "BlenderFoundation.Blender"                                 # Blender
-    "Box.Box"                                                   # Box Client
+    # Browsers.
     "Brave.Brave"                                               # Brave Browser
-    "Codeblocks.Codeblocks"                                     # Code::Blocks
-    "CPUID.CPU-Z"                                               # CPU-Z
-    "Cryptomator.Cryptomator"                                   # Cryptomator
-    "CrystalDewWorld.CrystalDiskInfo"                           # Crystal Disk Info
-    "CrystalDewWorld.CrystalDiskMark"                           # Crystal Disk Mark
-    "Discord.Discord"                                           # Discord
-    "Docker.DockerDesktop"                                      # Docker Desktop
-    "Digimezzo.Dopamine.3"                                      # Dopamine 3
-    "dev47apps.DroidCam"                                        # DroidCam Client
-    "Dropbox.Dropbox"                                           # Dropbox
-    "ElectronicArts.EADesktop"                                  # EA Desktop App
-    "Element.Element"                                           # Element Messenger
-    "EpicGames.EpicGamesLauncher"                               # Epic Games Launcher
-    "szTheory.exifcleaner"                                      # EXIF Cleaner
-    "FilenCloud.FilenSync"                                      # Filen Sync
     "Mozilla.Firefox"                                           # Firefox
-    "PrimateLabs.Geekbench.5"                                   # Geekbench
+    "Google.Chrome"                                             # Google Chrome
+    "LibreWolf.LibreWolf"                                       # LibreWolf
+    "Microsoft.Edge"                                            # Microsoft Edge
+    "Alex313031.Thorium.AVX2"                                   # Thorium (AVX2)
+    "TorProject.TorBrowser"                                     # Tor Browser
+    "Vivaldi.Vivaldi"                                           # Vivaldi
+
+    # Cloud Storage.
+    "Box.Box"                                                   # Box Client
+    "Dropbox.Dropbox"                                           # Dropbox
+    "FilenCloud.FilenSync"                                      # Filen Sync
+    "Google.GoogleDrive"                                        # Google Drive
+    "Mega.MEGASync"                                             # MEGASync
+    "Microsoft.OneDrive"                                        # OneDrive
+
+    # Communication.
+    "Discord.Discord"                                           # Discord
+    "Element.Element"                                           # Element Messenger
+    "Oxen.Session"                                              # Session Messenger
+    "OpenWhisperSystems.Signal"                                 # Signal Desktop
+    "Telegram.TelegramDesktop"                                  # Telegram Desktop
+    "Zoom.Zoom"                                                 # Zoom
+
+    # Compression.
+    "7zip.7zip"                                                 # 7-Zip
+    "mcmilk.7zip-zstd"                                          # 7-Zip ZSTD
+    "Giorgiotani.Peazip"                                        # PeaZip
+    "RARLab.WinRAR"                                             # WinRAR
+
+    # Development.
+    "Codeblocks.Codeblocks"                                     # Code::Blocks
+    "Docker.DockerDesktop"                                      # Docker Desktop
     "Git.Git"                                                   # Git
     "GitHub.GitHubDesktop"                                      # GitHub Desktop
-    "GOG.Galaxy"                                                # GOG Galaxy 2.0
-    "Google.Chrome"                                             # Google Chrome
-    "Google.GoogleDrive"                                        # Google Drive
-    "TechPowerUp.GPU-Z"                                         # GPU-Z
-    "HandBrake.HandBrake"                                       # Handbrake
-    "REALiX.HWiNFO"                                             # HWINFO-64
-    "CPUID.HWMonitor"                                           # HWMonitor
-    "LIGHTNINGUK.ImgBurn"                                       # ImgBurn
-    "AppWork.JDownloader"                                       # JDownloader 2
-    "KeePassXCTeam.KeePassXC"                                   # KeePassXC
-    "LibreWolf.LibreWolf"                                       # LibreWolf
-    "Malwarebytes.Malwarebytes"                                 # Malwarebytes
-    "Mega.MEGASync"                                             # MEGASync
-    "Microsoft.Edge"                                            # Microsoft Edge
     "Microsoft.XMLNotepad"                                      # Microsoft XML Notepad
-    "MKVToolNix.MKVToolNix"                                     # MKVToolNix
-    "Insecure.Nmap"                                             # Nmap
+    "MSYS2.MSYS2"                                               # MSYS2
     "OpenJS.NodeJS"                                             # NodeJS
-    "Nord.NordLocker"                                           # NordLocker
     "Notepad++.Notepad++"                                       # Notepad++
-    "Streetwriters.Notesnook"                                   # Notesnook
-    "Notion.Notion"                                             # Notion
-    "Nlitesoft.NTLite"                                          # NTLite
-    "TechPowerUp.NVCleanstall"                                  # NVCleanstall
-    "Nvidia.Broadcast"                                          # Nvidia Broadcast
-    "OBSProject.OBSStudio"                                      # OBS Studio
-    "Obsidian.Obsidian"                                         # Obsidian
-    "Microsoft.OneDrive"                                        # OneDrive
-    "OnionShare.OnionShare"                                     # OnionShare
-    "Ookla.Speedtest.CLI"                                       # Ookla Speedtest CLI
-    "namazso.OpenHashTab"                                       # OpenHashTab
-    "Parsec.Parsec"                                             # Parsec
-    "Playnite.Playnite"                                         # Playnite
-    "splode.pomotroid"                                          # Pomotroid
-    "Microsoft.PowerShell"                                      # Powershell 7
-    "Microsoft.PowerToys"                                       # PowerToys
-    "ProtonTechnologies.ProtonVPN"                              # Proton VPN
     "PuTTY.PuTTY"                                               # PuTTY
     "JetBrains.PyCharm.Community"                               # PyCharm Community Edition
     "Python.Python.3.12"                                        # Python 3
-    "qBittorrent.qBittorrent"                                   # qBittorrent
-    "Oxen.Session"                                              # Session Messenger
-    "ShareX.ShareX"                                             # ShareX
-    "OpenWhisperSystems.Signal"                                 # Signal Desktop
-    "Spotify.Spotify"                                           # Spotify
-    "Valve.Steam"                                               # Steam
-    "TeamViewer.TeamViewer"                                     # TeamViewer
-    "Telegram.TelegramDesktop"                                  # Telegram Desktop
-    "CodeSector.TeraCopy"                                       # TeraCopy
-    "Alex313031.Thorium.AVX2"                                   # Thorium Browser (AVX2)
-    "Appest.TickTick"                                           # TickTick
-    "Doist.Todoist"                                             # Todoist
-    "TorProject.TorBrowser"                                     # Tor Browser
-    "Ubisoft.Connect"                                           # Ubisoft Connect
-    "IDRIX.VeraCrypt"                                           # VeraCrypt
     "Microsoft.VisualStudio.2022.Community"                     # Visual Studio Community Edition 2022
     "Microsoft.VisualStudioCode"                                # Visual Studio Code
-    "VMware.WorkstationPro"                                     # VMware Workstation Pro
-    "Microsoft.WindowsTerminal"                                 # Windows Terminal                  (Installed by default on Win-11)
     "WinMerge.WinMerge"                                         # WinMerge
     "WinSCP.WinSCP"                                             # WinSCP
+
+    # Downloaders.
+    "AppWork.JDownloader"                                       # Jdownloader 2
+    "qBittorrent.qBittorrent"                                   # qBittorrent
+
+    # Encryption.
+    "Cryptomator.Cryptomator"                                   # Cryptomator
+    "Nord.NordLocker"                                           # NordLocker
+    "IDRIX.VeraCrypt"                                           # VeraCrypt
+
+    # Game Launchers.
+    "ElectronicArts.EADesktop"                                  # EA Desktop App
+    "EpicGames.EpicGamesLauncher"                               # Epic Games Launcher
+    "GOG.Galaxy"                                                # GOG Galaxy 2.0
+    "Playnite.Playnite"                                         # Playnite
+    "Valve.Steam"                                               # Steam
+    "Ubisoft.Connect"                                           # Ubisoft Connect
+
+    # Hardware Monitoring.
+    "FinalWire.AIDA64.Extreme"                                  # AIDA-64 Extreme
+    "CPUID.CPU-Z"                                               # CPU-Z
+    "CrystalDewWorld.CrystalDiskInfo"                           # Crystal Disk Info
+    "CrystalDewWorld.CrystalDiskMark"                           # Crystal Disk Mark
+    "PrimateLabs.Geekbench.5"                                   # Geekbench
+    "TechPowerUp.GPU-Z"                                         # GPU-Z
+    "REALiX.HWiNFO"                                             # HWINFO-64
+    "CPUID.HWMonitor"                                           # HWMonitor
+
+    # Hypervisor.
+    "Oracle.VirtualBox"                                         # VirtualBox
+    "VMware.WorkstationPro"                                     # VMware Workstation Pro
+    "VMware.WorkstationPlayer"                                  # VMware Workstation Player
+
+    # Media Writer.
+    "Balena.Etcher"                                             # Balena Etcher
+    "LIGHTNINGUK.ImgBurn"                                       # ImgBurn
+
+    # Multimedia & Entertainment.
+    "Digimezzo.Dopamine.3"                                      # Dopamine 3
+    "Spotify.Spotify"                                           # Spotify
+
+    # Multimedia Tools
+    "szTheory.exifcleaner"                                      # EXIF Cleaner
+    "HandBrake.HandBrake"                                       # Handbrake
+    "MKVToolNix.MKVToolNix"                                     # MKVToolNix
+
+    # Networking Tools.
+    "Insecure.Nmap"                                             # Nmap
     "WiresharkFoundation.Wireshark"                             # Wireshark
-    "Xmind.Xmind"                                               # Xmind
     "ZeroTier.ZeroTierOne"                                      # ZeroTier One
-    "Zoom.Zoom"                                                 # Zoom
 
-)
+    # Password Managers.
+    "Bitwarden.Bitwarden"                                       # Bitwarden
+    "KeePassXCTeam.KeePassXC"                                   # KeePassXC
 
+    # Productivity.
+    "BlenderFoundation.Blender"                                 # Blender
+    "Streetwriters.Notesnook"                                   # Notesnook
+    "Notion.Notion"                                             # Notion
+    "Nvidia.Broadcast"                                          # Nvidia Broadcast
+    "OBSProject.OBSStudio"                                      # OBS Studio
+    "Obsidian.Obsidian"                                         # Obsidian
+    "Appest.TickTick"                                           # TickTick
+    "Doist.Todoist"                                             # Todoist
+    "Xmind.Xmind"                                               # Xmind
+
+    # Remote Desktop.
+    "AnyDeskSoftwareGmbH.AnyDesk"                               # AnyDesk
+    "Parsec.Parsec"                                             # Parsec
+    "TeamViewer.TeamViewer"                                     # TeamViewer
+
+    # Security.
+    "AdGuard.AdGuard"                                           # AdGuard Windows
+    "Malwarebytes.Malwarebytes"                                 # Malwarebytes
+    "OnionShare.OnionShare"                                     # OnionShare
+    "ProtonTechnologies.ProtonVPN"                              # Proton VPN
+
+    # System Maintenance.
+    "BleachBit.BleachBit"                                       # Bleachbit
+
+    # System Utilities.
+    "namazso.OpenHashTab"                                       # OpenHashTab
+    "Ookla.Speedtest.CLI"                                       # Ookla Speedtest CLI
+    "Microsoft.PowerShell"                                      # Powershell 7
+    "Microsoft.PowerToys"                                       # PowerToys
+    "CodeSector.TeraCopy"                                       # TeraCopy
+    "Microsoft.WindowsTerminal"                                 # Windows Terminal                  (Installed by default on Win-11)
+
+    # Special Tools
+    "Nlitesoft.NTLite"                                          # NTLite
+    "TechPowerUp.NVCleanstall"                                  # NVCleanstall
+
+################################################################################################################################
 # Install apps.
 foreach ($app in $apps){
     Write-Output "`n# Now installing : $app . . . .`n"
