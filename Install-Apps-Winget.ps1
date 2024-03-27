@@ -171,6 +171,7 @@ $apps = @(
     "Nlitesoft.NTLite"                                          # NTLite
     "TechPowerUp.NVCleanstall"                                  # NVCleanstall
 
+)
 ################################################################################################################################
 # Install apps.
 foreach ($app in $apps){
