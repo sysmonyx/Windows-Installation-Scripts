@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #
-#   Last Updated:   25.03.2024
+#   Last Updated:   31.03.2024
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -166,6 +166,7 @@ $apps = @(
     "Microsoft.PowerToys"                                       # PowerToys
     "CodeSector.TeraCopy"                                       # TeraCopy
     "Microsoft.WindowsTerminal"                                 # Windows Terminal                  (Installed by default on Win-11)
+    "SomePythonThings.WingetUIStore"                            # WinGetUI
 
     # Special Tools
     "Nlitesoft.NTLite"                                          # NTLite
