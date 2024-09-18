@@ -1,19 +1,19 @@
 ################################################################################################################################
-#    /$$$$$$                                                                                                                    
-#   /$$__  $$                                                                                                                   
+#    /$$$$$$
+#   /$$__  $$
 #  | $$  \__/ /$$   /$$  /$$$$$$$ /$$$$$$/$$$$   /$$$$$$  /$$$$$$$  /$$   /$$ /$$   /$$         # Author:   Soham Ray [Sysmonyx]
-#  |  $$$$$$ | $$  | $$ /$$_____/| $$_  $$_  $$ /$$__  $$| $$__  $$| $$  | $$|  $$ /$$/                                         
+#  |  $$$$$$ | $$  | $$ /$$_____/| $$_  $$_  $$ /$$__  $$| $$__  $$| $$  | $$|  $$ /$$/
 #   \____  $$| $$  | $$|  $$$$$$ | $$ \ $$ \ $$| $$  \ $$| $$  \ $$| $$  | $$ \  $$$$/          # Website:  https://sysmonyx.com
-#   /$$  \ $$| $$  | $$ \____  $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$  | $$  >$$  $$                                          
+#   /$$  \ $$| $$  | $$ \____  $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$  | $$  >$$  $$
 #  |  $$$$$$/|  $$$$$$$ /$$$$$$$/| $$ | $$ | $$|  $$$$$$/| $$  | $$|  $$$$$$$ /$$/\  $$         # Email:    contact@sysmonyx.com
-#   \______/  \____  $$|_______/ |__/ |__/ |__/ \______/ |__/  |__/ \____  $$|__/  \__/                                         
-#             /$$  | $$                                             /$$  | $$                                                   
-#            |  $$$$$$/                                            |  $$$$$$/                                                   
-#             \______/                                              \______/                                                    
+#   \______/  \____  $$|_______/ |__/ |__/ |__/ \______/ |__/  |__/ \____  $$|__/  \__/
+#             /$$  | $$                                             /$$  | $$
+#            |  $$$$$$/                                            |  $$$$$$/
+#             \______/                                              \______/
 ################################################################################################################################
 #   Description:    This script installs necessery Dependencies, Runtimes & Dev-Kits using the Windows Package Manager for Windows.
 #
-#   Last Updated:   30.04.2023
+#   Last Updated:   18.09.2024
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -28,7 +28,7 @@ Write-Output "`nFinished initial update.`n"
 $apps = @(
 
     # Sorted A-Z.
-    "EclipseAdoptium.Temurin.21.JDK"                            # Adoptium OpenJDK 21
+    "EclipseAdoptium.Temurin.22.JDK"                            # Adoptium OpenJDK 22
     "Microsoft.DotNet.SDK.8"                                    # Microsoft DotNET SDK 8.0
     "Microsoft.DotNet.SDK.7"                                    # Microsoft DotNET SDK 7.0
     "Microsoft.DotNet.SDK.6"                                    # Microsoft DotNET SDK 6.0

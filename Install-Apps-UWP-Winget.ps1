@@ -1,29 +1,26 @@
 ################################################################################################################################
-#    /$$$$$$                                                                                                                    
-#   /$$__  $$                                                                                                                   
+#    /$$$$$$
+#   /$$__  $$
 #  | $$  \__/ /$$   /$$  /$$$$$$$ /$$$$$$/$$$$   /$$$$$$  /$$$$$$$  /$$   /$$ /$$   /$$         # Author:   Soham Ray [Sysmonyx]
-#  |  $$$$$$ | $$  | $$ /$$_____/| $$_  $$_  $$ /$$__  $$| $$__  $$| $$  | $$|  $$ /$$/                                         
+#  |  $$$$$$ | $$  | $$ /$$_____/| $$_  $$_  $$ /$$__  $$| $$__  $$| $$  | $$|  $$ /$$/
 #   \____  $$| $$  | $$|  $$$$$$ | $$ \ $$ \ $$| $$  \ $$| $$  \ $$| $$  | $$ \  $$$$/          # Website:  https://sysmonyx.com
-#   /$$  \ $$| $$  | $$ \____  $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$  | $$  >$$  $$                                          
+#   /$$  \ $$| $$  | $$ \____  $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$  | $$  >$$  $$
 #  |  $$$$$$/|  $$$$$$$ /$$$$$$$/| $$ | $$ | $$|  $$$$$$/| $$  | $$|  $$$$$$$ /$$/\  $$         # Email:    contact@sysmonyx.com
-#   \______/  \____  $$|_______/ |__/ |__/ |__/ \______/ |__/  |__/ \____  $$|__/  \__/                                         
-#             /$$  | $$                                             /$$  | $$                                                   
-#            |  $$$$$$/                                            |  $$$$$$/                                                   
-#             \______/                                              \______/                                                    
+#   \______/  \____  $$|_______/ |__/ |__/ |__/ \______/ |__/  |__/ \____  $$|__/  \__/
+#             /$$  | $$                                             /$$  | $$
+#            |  $$$$$$/                                            |  $$$$$$/
+#             \______/                                              \______/
 ################################################################################################################################
 #   Description:    This script installs specified apps from the Microsoft Store using the Windows Package Manager for Windows.
 #
-#   Last Updated:   12.11.2023
+#   Last Updated:   18.09.2024
 ################################################################################################################################
-# Elevate script to have Administrative privileges.
-if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
-    { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
-
 # Perform an initial update.
 Write-Output "`nPerforming initial update . . . .`n"
 winget upgrade -h --all --include-unknown
 Write-Output "`nFinished initial update.`n"
 
+################################################################################################################################
 # Apps.
 $apps = @(
 
@@ -40,7 +37,7 @@ $apps = @(
     "9WZDNCRFHVN5"                                              # Windows Calculator
 
 )
-
+################################################################################################################################
 # Install apps.
 foreach ($app in $apps){
     Write-Output "`n# Now installing : $app . . . .`n"

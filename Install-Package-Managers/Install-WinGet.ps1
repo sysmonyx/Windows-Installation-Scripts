@@ -19,6 +19,7 @@
 #   Last Updated:   16.09.2024
 ################################################################################################################################
 # Check if WinGet is already installed.
+Write-Output "Checking if WinGet is already present in system . . . ."
 try {
 	winget --version
 	Write-Output "WinGet is already present on this system."
@@ -30,6 +31,7 @@ catch {
 }
 
 # Check if Microsoft UI XAML is present. Install if not.
+Write-Output "Checking if Microsoft UI XAML is already present . . . ."
 try {
 	$package = Get-AppxPackage -Name "Microsoft.UI.Xaml.2.8"
 	if ($package) {
