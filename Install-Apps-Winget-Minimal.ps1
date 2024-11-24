@@ -1,20 +1,20 @@
 ################################################################################################################################
-#    /$$$$$$                                                                                                                    
-#   /$$__  $$                                                                                                                   
+#    /$$$$$$
+#   /$$__  $$
 #  | $$  \__/ /$$   /$$  /$$$$$$$ /$$$$$$/$$$$   /$$$$$$  /$$$$$$$  /$$   /$$ /$$   /$$         # Author:   Soham Ray [Sysmonyx]
-#  |  $$$$$$ | $$  | $$ /$$_____/| $$_  $$_  $$ /$$__  $$| $$__  $$| $$  | $$|  $$ /$$/                                         
+#  |  $$$$$$ | $$  | $$ /$$_____/| $$_  $$_  $$ /$$__  $$| $$__  $$| $$  | $$|  $$ /$$/
 #   \____  $$| $$  | $$|  $$$$$$ | $$ \ $$ \ $$| $$  \ $$| $$  \ $$| $$  | $$ \  $$$$/          # Website:  https://sysmonyx.com
-#   /$$  \ $$| $$  | $$ \____  $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$  | $$  >$$  $$                                          
+#   /$$  \ $$| $$  | $$ \____  $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$  | $$  >$$  $$
 #  |  $$$$$$/|  $$$$$$$ /$$$$$$$/| $$ | $$ | $$|  $$$$$$/| $$  | $$|  $$$$$$$ /$$/\  $$         # Email:    contact@sysmonyx.com
-#   \______/  \____  $$|_______/ |__/ |__/ |__/ \______/ |__/  |__/ \____  $$|__/  \__/                                         
-#             /$$  | $$                                             /$$  | $$                                                   
-#            |  $$$$$$/                                            |  $$$$$$/                                                   
-#             \______/                                              \______/                                                    
+#   \______/  \____  $$|_______/ |__/ |__/ |__/ \______/ |__/  |__/ \____  $$|__/  \__/
+#             /$$  | $$                                             /$$  | $$
+#            |  $$$$$$/                                            |  $$$$$$/
+#             \______/                                              \______/
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #                   Minimal version for only essential applications.
 #
-#   Last Updated:   05.09.2024
+#   Last Updated:   24.11.2024
 ################################################################################################################################
 # Perform an initial update.
 Write-Output "`nPerforming initial update . . . .`n"
@@ -27,7 +27,7 @@ $apps = @(
 
     # Browsers.
     #"Brave.Brave"                                               # Brave Browser
-    #"Mozilla.Firefox"                                           # Firefox
+    "Mozilla.Firefox"                                           # Firefox
     "Google.Chrome"                                             # Google Chrome
     #"LibreWolf.LibreWolf"                                       # LibreWolf
     "Microsoft.Edge"                                            # Microsoft Edge
@@ -83,6 +83,10 @@ $apps = @(
     #"Nord.NordLocker"                                           # NordLocker
     #"IDRIX.VeraCrypt"                                           # VeraCrypt
 
+    # File Sharing.
+    "LocalSend.LocalSend"                                       # LocalSend
+    "OnionShare.OnionShare"                                     # OnionShare
+
     # Game Launchers.
     #"ElectronicArts.EADesktop"                                  # EA Desktop App
     #"EpicGames.EpicGamesLauncher"                               # Epic Games Launcher
@@ -103,8 +107,6 @@ $apps = @(
 
     # Hypervisor.
     #"Oracle.VirtualBox"                                         # VirtualBox
-    "VMware.WorkstationPro"                                     # VMware Workstation Pro
-    #"VMware.WorkstationPlayer"                                  # VMware Workstation Player
 
     # Image Upscaler.
     #"Tohrusky.Final2x"                                          # Final2x
@@ -149,9 +151,8 @@ $apps = @(
     #"TeamViewer.TeamViewer"                                     # TeamViewer
 
     # Security.
-    "AdGuard.AdGuard"                                           # AdGuard Windows
+    #"AdGuard.AdGuard"                                           # AdGuard Windows
     #"Malwarebytes.Malwarebytes"                                 # Malwarebytes
-    "OnionShare.OnionShare"                                     # OnionShare
     "ProtonTechnologies.ProtonVPN"                              # Proton VPN
 
     # System Maintenance.
