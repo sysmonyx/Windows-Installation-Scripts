@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs necessery Dependencies, Runtimes & Dev-Kits using the Windows Package Manager for Windows.
 #
-#   Last Updated:   18.09.2024
+#   Last Updated:   19.01.2025
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -28,7 +28,8 @@ Write-Output "`nFinished initial update.`n"
 $apps = @(
 
     # Sorted A-Z.
-    "EclipseAdoptium.Temurin.22.JDK"                            # Adoptium OpenJDK 22
+    "EclipseAdoptium.Temurin.23.JDK"                            # Adoptium OpenJDK 23
+    "Microsoft.DotNet.SDK.9"                                    # Microsoft DotNET SDK 9.0
     "Microsoft.DotNet.SDK.8"                                    # Microsoft DotNET SDK 8.0
     "Microsoft.DotNet.SDK.7"                                    # Microsoft DotNET SDK 7.0
     "Microsoft.DotNet.SDK.6"                                    # Microsoft DotNET SDK 6.0
@@ -48,6 +49,8 @@ $apps = @(
     "Microsoft.VCRedist.2015+.x64"                              # Microsoft Visual C++ 2015-2022 Redistributable (x64)
     "Microsoft.VCRedist.2015+.x86"                              # Microsoft Visual C++ 2015-2022 Redistributable (x86)
 
+    # Media Dependencies.
+    "Gyan.FFmpeg"                                               # FFMPEG static build from GYAN.DEV
 )
 
 # Install apps.

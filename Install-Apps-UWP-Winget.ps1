@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps from the Microsoft Store using the Windows Package Manager for Windows.
 #
-#   Last Updated:   18.09.2024
+#   Last Updated:   19.01.2025
 ################################################################################################################################
 # Perform an initial update.
 Write-Output "`nPerforming initial update . . . .`n"
@@ -26,8 +26,6 @@ $apps = @(
 
     # Sorted A-Z.
     "9PFHDD62MXS1"                                              # Apple Music Preview
-    "9MVZQVXJBQ9V"                                              # AV1 Video Extension
-    "9N4WGH0Z6VHQ"                                              # HEVC Video Extensions for Device Manufacturers
     "9WZDNCRFJ4MV"                                              # Lenovo Vantage
     "9MSMLRH6LZF3"                                              # Microsoft Notepad
     "9PCFS5B6T72H"                                              # Microsoft Paint
@@ -35,6 +33,16 @@ $apps = @(
     "9NBLGGH5R558"                                              # Microsoft To Do
     "9NKSQGP7F2NH"                                              # WhatsApp Desktop
     "9WZDNCRFHVN5"                                              # Windows Calculator
+
+    # Media Extensions.
+    "9MVZQVXJBQ9V"                                              # AV1 Video Extension
+    "9pmmsr1cgpwg"                                              # HEIF Image Extension
+    "9N4WGH0Z6VHQ"                                              # HEVC Video Extensions for Device Manufacturers
+    "9n95q1zzpmh4"                                              # MPEG-2 Video Extension
+    "9nctdw2w1bh8"                                              # RAW Image Extension
+    "9n4d0msmp0pt"                                              # VP9 Video Extension
+    "9n5tdp8vcmhs"                                              # Web Media Extension
+    "9pg2dk419drg"                                              # Webp Image Extension
 
 )
 ################################################################################################################################

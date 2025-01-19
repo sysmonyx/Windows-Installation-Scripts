@@ -14,7 +14,7 @@
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #                   Minimal version for only essential applications.
 #
-#   Last Updated:   24.11.2024
+#   Last Updated:   19.01.2025
 ################################################################################################################################
 # Perform an initial update.
 Write-Output "`nPerforming initial update . . . .`n"
@@ -26,11 +26,11 @@ Write-Output "`nFinished initial update.`n"
 $apps = @(
 
     # Browsers.
-    #"Brave.Brave"                                               # Brave Browser
+    "Brave.Brave"                                               # Brave Browser
     "Mozilla.Firefox"                                           # Firefox
     "Google.Chrome"                                             # Google Chrome
     #"LibreWolf.LibreWolf"                                       # LibreWolf
-    "Microsoft.Edge"                                            # Microsoft Edge
+    #"Microsoft.Edge"                                            # Microsoft Edge
     #"Alex313031.Thorium.AVX2"                                   # Thorium (AVX2)
     #"TorProject.TorBrowser"                                     # Tor Browser
     #"Vivaldi.Vivaldi"                                           # Vivaldi
@@ -75,6 +75,7 @@ $apps = @(
     "WinSCP.WinSCP"                                             # WinSCP
 
     # Downloaders.
+    "aria2.aria2"                                               # Aria2
     "AppWork.JDownloader"                                       # Jdownloader 2
     "qBittorrent.qBittorrent"                                   # qBittorrent
 

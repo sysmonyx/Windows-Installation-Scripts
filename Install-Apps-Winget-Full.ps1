@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #
-#   Last Updated:   24.11.2024
+#   Last Updated:   19.01.2025
 ################################################################################################################################
 # Perform an initial update.
 Write-Output "`nPerforming initial update . . . .`n"
@@ -74,6 +74,7 @@ $apps = @(
     "WinSCP.WinSCP"                                             # WinSCP
 
     # Downloaders.
+    "aria2.aria2"                                               # Aria2
     "AppWork.JDownloader"                                       # Jdownloader 2
     "qBittorrent.qBittorrent"                                   # qBittorrent
 
