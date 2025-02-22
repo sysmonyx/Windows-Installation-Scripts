@@ -29,7 +29,7 @@ $apps = @(
     "Brave.Brave"                                               # Brave Browser
     "Mozilla.Firefox"                                           # Firefox
     "Google.Chrome"                                             # Google Chrome
-    #"LibreWolf.LibreWolf"                                       # LibreWolf
+    "LibreWolf.LibreWolf"                                       # LibreWolf
     #"Microsoft.Edge"                                            # Microsoft Edge
     #"Alex313031.Thorium.AVX2"                                   # Thorium (AVX2)
     #"TorProject.TorBrowser"                                     # Tor Browser
@@ -44,12 +44,12 @@ $apps = @(
     #"Microsoft.OneDrive"                                        # OneDrive
 
     # Communication.
-    "Discord.Discord"                                           # Discord
+    #"Discord.Discord"                                           # Discord
     #"Element.Element"                                           # Element Messenger
     #"Oxen.Session"                                              # Session Messenger
     #"OpenWhisperSystems.Signal"                                 # Signal Desktop
     #"Telegram.TelegramDesktop"                                  # Telegram Desktop
-    "Zoom.Zoom"                                                 # Zoom
+    #"Zoom.Zoom"                                                 # Zoom
 
     # Compression.
     #"7zip.7zip"                                                 # 7-Zip
@@ -62,7 +62,7 @@ $apps = @(
     #"Docker.DockerDesktop"                                      # Docker Desktop
     "Git.Git"                                                   # Git
     "GitHub.GitHubDesktop"                                      # GitHub Desktop
-    "Microsoft.XMLNotepad"                                      # Microsoft XML Notepad
+    #"Microsoft.XMLNotepad"                                      # Microsoft XML Notepad
     #"MSYS2.MSYS2"                                               # MSYS2
     #"OpenJS.NodeJS"                                             # NodeJS
     "Notepad++.Notepad++"                                       # Notepad++
@@ -75,7 +75,7 @@ $apps = @(
     "WinSCP.WinSCP"                                             # WinSCP
 
     # Downloaders.
-    "aria2.aria2"                                               # Aria2
+    #"aria2.aria2"                                               # Aria2
     "AppWork.JDownloader"                                       # Jdownloader 2
     "qBittorrent.qBittorrent"                                   # qBittorrent
 
