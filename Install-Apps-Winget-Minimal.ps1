@@ -68,7 +68,7 @@ $apps = @(
     "Notepad++.Notepad++"                                       # Notepad++
     "PuTTY.PuTTY"                                               # PuTTY
     #"JetBrains.PyCharm.Community"                               # PyCharm Community Edition
-    "Python.Python.3.12"                                        # Python 3
+    "Python.Python.3.13"                                        # Python 3
     #"Microsoft.VisualStudio.2022.Community"                     # Visual Studio Community Edition 2022
     "Microsoft.VisualStudioCode"                                # Visual Studio Code
     "WinMerge.WinMerge"                                         # WinMerge
