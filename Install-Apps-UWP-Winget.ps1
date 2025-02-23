@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps from the Microsoft Store using the Windows Package Manager for Windows.
 #
-#   Last Updated:   19.01.2025
+#   Last Updated:   23.02.2025
 ################################################################################################################################
 # Perform an initial update.
 Write-Output "`nPerforming initial update . . . .`n"
@@ -31,7 +31,7 @@ $apps = @(
     "9PCFS5B6T72H"                                              # Microsoft Paint
     "9WZDNCRFJBH4"                                              # Microsoft Photos
     "9NBLGGH5R558"                                              # Microsoft To Do
-    "9NKSQGP7F2NH"                                              # WhatsApp Desktop
+    #"9NKSQGP7F2NH"                                              # WhatsApp Desktop
     "9WZDNCRFHVN5"                                              # Windows Calculator
 
     # Media Extensions.

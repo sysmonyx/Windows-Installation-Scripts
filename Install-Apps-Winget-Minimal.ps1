@@ -14,7 +14,7 @@
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #                   Minimal version for only essential applications.
 #
-#   Last Updated:   19.01.2025
+#   Last Updated:   23.02.2025
 ################################################################################################################################
 # Perform an initial update.
 Write-Output "`nPerforming initial update . . . .`n"
