@@ -48,6 +48,7 @@ $apps = @(
     "Oxen.Session"                                              # Session Messenger
     "OpenWhisperSystems.Signal"                                 # Signal Desktop
     "Telegram.TelegramDesktop"                                  # Telegram Desktop
+    "Mozilla.Thunderbird"                                       # Mozilla Thunderbird
     "Zoom.Zoom"                                                 # Zoom
 
     # Compression.
