@@ -16,9 +16,9 @@
 #   Last Updated:   23.02.2025
 ################################################################################################################################
 # Perform an initial update.
-Write-Output "`nPerforming initial update . . . .`n"
+Write-Output "`n--> Performing initial update . . . .`n"
 winget upgrade -h --all --include-unknown
-Write-Output "`nFinished initial update.`n"
+Write-Output "`n--> Finished initial update.`n"
 
 ################################################################################################################################
 # Apps.
@@ -31,7 +31,7 @@ $apps = @(
     "9PCFS5B6T72H"                                              # Microsoft Paint
     "9WZDNCRFJBH4"                                              # Microsoft Photos
     "9NBLGGH5R558"                                              # Microsoft To Do
-    #"9NKSQGP7F2NH"                                              # WhatsApp Desktop
+    "9NKSQGP7F2NH"                                              # WhatsApp Desktop
     "9WZDNCRFHVN5"                                              # Windows Calculator
 
     # Media Extensions.
@@ -48,17 +48,17 @@ $apps = @(
 ################################################################################################################################
 # Install apps.
 foreach ($app in $apps){
-    Write-Output "`n# Now installing : $app . . . .`n"
+    Write-Output "`n--> Now installing : $app . . . .`n"
     winget install -eh --id $app
-    Write-Output "`n# Finished installing $app.`n"
+    Write-Output "`n--> Finished installing $app.`n"
 }
 
 # Perform closing update.
-Write-Output "`nPerforming closing update . . . .`n"
+Write-Output "`--> Performing closing update . . . .`n"
 winget upgrade -h --all --include-unknown
-Write-Output "`nFinished closing update.`n"
+Write-Output "`--> Finished closing update.`n"
 
 # Wait for Key-Press from user.
-Write-Output "`nComplete. Press any key to continue . . . .`n"
+Write-Output "`n--> Complete. Press any key to continue . . . .`n"
 [Console]::ReadKey($true) | Out-Null
 ################################################################################################################################

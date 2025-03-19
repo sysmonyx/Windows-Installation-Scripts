@@ -20,9 +20,9 @@ if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]:
     { Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs; exit }
 
 # Perform an initial update.
-Write-Output "`nPerforming intial update . . . .`n"
+Write-Output "`n--> Performing intial update . . . .`n"
 winget upgrade -h --all --include-unknown
-Write-Output "`nFinished initial update.`n"
+Write-Output "`n--> Finished initial update.`n"
 
 # Apps.
 $apps = @(
@@ -55,17 +55,17 @@ $apps = @(
 
 # Install apps.
 foreach ($app in $apps){
-    Write-Output "`n# Now installing : $app . . . .`n"
+    Write-Output "`n--> Now installing : $app . . . .`n"
     winget install -eh $app
-    Write-Output "`n# Finished installing $app.`n"
+    Write-Output "`n--> Finished installing $app.`n"
 }
 
 # Perform closing update.
-Write-Output "`nPerforming closing update . . . .`n"
+Write-Output "`n--> Performing closing update . . . .`n"
 winget upgrade -h --all --include-unknown
-Write-Output "`nFinished closing update.`n"
+Write-Output "`n--> Finished closing update.`n"
 
 # Wait for Key-Press from user.
-Write-Output "`nComplete. Press any key to continue . . . .`n"
+Write-Output "`n--> Complete. Press any key to continue . . . .`n"
 [Console]::ReadKey($true) | Out-Null
 ################################################################################################################################
