@@ -11,7 +11,7 @@
 #            |  $$$$$$/                                            |  $$$$$$/
 #             \______/                                              \______/
 ################################################################################################################################
-#   Description:    This script installs the Microsoft Store & WinGet-CLI to LTSC editions of WIndows 10/11.
+#   Description:    This script installs the Microsoft Store & WinGet-CLI to LTSC editions of Windows 10/11.
 #
 #   Last Updated:   19.03.2025
 ################################################################################################################################
