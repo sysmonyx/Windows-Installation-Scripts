@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs specified apps using the Windows Package Manager for Windows.
 #
-#   Last Updated:   23.02.2025
+#   Last Updated:   05.05.2025
 ################################################################################################################################
 # Perform an initial update.
 Write-Output "`n--> Performing initial update . . . .`n"
@@ -136,6 +136,7 @@ $apps = @(
 
     # Productivity.
     "BlenderFoundation.Blender"                                 # Blender
+    "Cyanfish.NAPS2"                                            # NAPS2
     "Streetwriters.Notesnook"                                   # Notesnook
     "Notion.Notion"                                             # Notion
     "Nvidia.Broadcast"                                          # Nvidia Broadcast

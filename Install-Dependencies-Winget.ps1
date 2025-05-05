@@ -13,7 +13,7 @@
 ################################################################################################################################
 #   Description:    This script installs necessery Dependencies, Runtimes & Dev-Kits using the Windows Package Manager for Windows.
 #
-#   Last Updated:   19.01.2025
+#   Last Updated:   05.05.2025
 ################################################################################################################################
 # Elevate script to have Administrative privileges.
 if (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator"))
@@ -28,7 +28,7 @@ Write-Output "`n--> Finished initial update.`n"
 $apps = @(
 
     # Sorted A-Z.
-    "EclipseAdoptium.Temurin.23.JDK"                            # Adoptium OpenJDK 23
+    "EclipseAdoptium.Temurin.24.JDK"                            # Adoptium OpenJDK 24
     "Microsoft.DotNet.SDK.9"                                    # Microsoft DotNET SDK 9.0
     "Microsoft.DotNet.SDK.8"                                    # Microsoft DotNET SDK 8.0
     "Microsoft.DotNet.SDK.7"                                    # Microsoft DotNET SDK 7.0
